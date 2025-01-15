@@ -27,7 +27,7 @@ function AboutMe() {
           }}
         >
           <img
-            src="./public/images/imageEtka.jpeg"
+            src="portfolio-etka/dist/images/imageEtka.jpeg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
