@@ -6,8 +6,8 @@ function Projects() {
       title: "Face Authentication Web App",
       description:
         "A web app that implements a simple face identification function for user login using a live camera to capture the face and compare it with the registered face to give access if it matches. Currently, this app is not hosted and unavailable for live viewing.",
-      tech: "Flask, React, Tailwind CSS",
-      image: "public/images/faceauthapp.png",
+      tech: "Flask, React, SQLite, tailwind CSS",
+      image: "/portfolio-etka/images/projectfaceid.png",
       github: "https://github.com/etkaturan/Face-Authentication-App.git",
       live: "#",
     },
@@ -15,8 +15,8 @@ function Projects() {
       title: "Vaultspring Web App",
       description:
         "A web app for financing, with user-specific pages displaying balances, incomes, spendings, investments, and goals interconnected in blocks. Currently, this app is not hosted and unavailable for live viewing.",
-      tech: "Flask, React, SQLite",
-      image: "public/images/vaultspring.png",
+      tech: "Flask, React, SQLite, tailwind CSS",
+      image: "/portfolio-etka/images/projectvaultspring.png",
       github: "https://github.com/etkaturan/VaultSpring-web-app-.git",
       live: "#",
     },
@@ -43,7 +43,7 @@ function Projects() {
       description:
         "An under-development e-commerce website similar to Barista Club, designed for Fakir.kz. This project will be visible soon.",
       tech: "Flask, React, SQLite",
-      image: "public/images/fakir.png",
+      image: "/portfolio-etka/images/projectfakir.png",
       github: "#",
       live: "#",
     },
@@ -52,7 +52,7 @@ function Projects() {
       description:
         "A private repository for a spatial hypertext web app enhanced with AI features. This project will soon be available for live viewing.",
       tech: "Flask, React, MongoDB, Neo4j",
-      image: "public/images/hypertext.png",
+      image: "/portfolio-etka/images/projectaihypertext.png",
       github: "#",
       live: "#",
     },
