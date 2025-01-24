@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -16,10 +17,30 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real app, you would send formData to a backend API here
-    console.log(formData);
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);  // Reset the form after 3 seconds
+
+    // Send email using EmailJS
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your Vite environment variable
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Replace with your Vite environment variable
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_USER_ID // Replace with your Vite environment variable
+      )
+  
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSubmitted(true);
+          setTimeout(() => setSubmitted(false), 3000);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
   };
 
   return (
