@@ -71,7 +71,7 @@ function AboutMe() {
           {/* Resume Button with White Glow */}
           <div className="mt-10">
             <a
-              href="/resume.pdf"
+              href="public/Mekhmetetka Turan.pdf"
               download
               className="relative px-8 py-3 text-lg font-semibold uppercase rounded-full"
               onMouseEnter={() => setButtonHover(true)}
@@ -93,24 +93,19 @@ function AboutMe() {
 
           {/* Social Icons */}
           <div className="flex space-x-8 mt-10 text-4xl text-gray-400">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="hover:text-pink-500 transition" />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        
+            <a href="https://github.com/etkaturan" target="_blank" rel="noopener noreferrer">
               <FaGithub className="hover:text-gray-300 transition" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/etka-turan-158632226/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="hover:text-blue-500 transition" />
-            </a>
-            <a href="https://steamcommunity.com" target="_blank" rel="noopener noreferrer">
-              <FaSteam className="hover:text-green-400 transition" />
             </a>
           </div>
         </div>
       </div>
 
       {/* Downward Arrow to Scroll to Next Section */}
-      <ScrollLink
+      {/* <ScrollLink
         to="projects"
         smooth={true}
         duration={500}
@@ -119,7 +114,7 @@ function AboutMe() {
         <div className="text-5xl text-gray-400 hover:text-blue-400 transition animate-bounce">
           ↓
         </div>
-      </ScrollLink>
+      </ScrollLink> */}
     </section>
   );
 }

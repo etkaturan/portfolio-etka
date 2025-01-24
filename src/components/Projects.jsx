@@ -3,30 +3,39 @@ import { motion } from "framer-motion";
 function Projects() {
   const projectList = [
     {
-      title: "AI Chatbot for Spatial Hypertext",
+      title: "Face Authentication Web App",
       description:
-        "A chatbot system integrated with a spatial hypertext environment that extracts named entities and relationships.",
-      tech: "Flask, React, MongoDB, Neo4j",
-      image: "/images/chatbot.png",
-      github: "https://github.com/username/ai-chatbot",
-      live: "https://chatbot-demo.com",
+        "A web app that implements a simple face identification function for user login using a live camera to capture the face and compare it with the registered face to give access if it matches. Currently, this app is not hosted and unavailable for live viewing.",
+      tech: "Flask, React, Tailwind CSS",
+      image: "public/images/faceauthapp.png",
+      github: "https://github.com/etkaturan/Face-Authentication-App.git",
+      live: "#",
     },
     {
-      title: "E-commerce Platform",
+      title: "Vaultspring Web App",
       description:
-        "Developed a full-stack e-commerce website with dynamic product catalogs and payment integration.",
-      tech: "Node.js, React, Stripe",
-      image: "/images/ecommerce.png",
-      github: "https://github.com/username/ecommerce-platform",
-      live: "https://ecommerce-demo.com",
+        "A web app for financing, with user-specific pages displaying balances, incomes, spendings, investments, and goals interconnected in blocks. Currently, this app is not hosted and unavailable for live viewing.",
+      tech: "Flask, React, SQLite",
+      image: "public/images/vaultspring.png",
+      github: "https://github.com/etkaturan/VaultSpring-web-app-.git",
+      live: "#",
+    },
+    {
+      title: "E-commerce Website (Barista Club)",
+      description:
+        "Developed a full-stack e-commerce website with dynamic product catalogs for a customer.",
+      tech: "Flask, React, SQLite",
+      image: "portfolio-etka/dist/images/projectbarista.png",
+      github: "#",
+      live: "http://54.235.2.68/",
     },
     {
       title: "Portfolio Website",
       description:
         "Designed and developed my personal portfolio showcasing projects and skills.",
-      tech: "React, Tailwind CSS, Flask",
-      image: "/images/portfolio.png",
-      github: "https://github.com/username/portfolio",
+      tech: "React, Tailwind CSS",
+      image: "public/images/projectportfolio.png",
+      github: "https://github.com/etkaturan/portfolio-etka.git",
       live: "#",
     },
   ];
@@ -41,14 +50,13 @@ function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectList.map((project, index) => (
             <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0, duration: 0.3 }}
-                whileHover={{ scale: 1.05 }}
-                className="bg-gray-900 p-6 rounded-lg shadow-lg"
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2, duration: 0.3 }}
+              whileHover={{ scale: 1.05 }}
+              className="bg-gray-900 p-6 rounded-lg shadow-lg"
             >
-          
               <img
                 src={project.image}
                 alt={project.title}
@@ -58,14 +66,16 @@ function Projects() {
               <p className="text-gray-400 mb-4">{project.description}</p>
               <p className="text-blue-400 mb-6">{project.tech}</p>
               <div className="flex justify-center space-x-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded"
-                >
-                  GitHub
-                </a>
+                {project.github !== "#" && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded"
+                  >
+                    GitHub
+                  </a>
+                )}
                 {project.live !== "#" && (
                   <a
                     href={project.live}
