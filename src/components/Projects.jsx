@@ -25,7 +25,7 @@ function Projects() {
       description:
         "Developed a full-stack e-commerce website with dynamic product catalogs for a customer.",
       tech: "Flask, React, SQLite",
-      image: "portfolio-etka/dist/images/projectbarista.png",
+      image: "dist/images/projectbarista.png",
       github: "#",
       live: "http://54.235.2.68/",
     },
@@ -35,7 +35,7 @@ function Projects() {
         "Designed and developed my personal portfolio showcasing projects and skills.",
       tech: "React, Tailwind CSS",
       image: "public/images/projectportfolio.png",
-      github: "https://github.com/etkaturan/portfolio-etka.git",
+      github: "dist/images/projectportfolio.png",
       live: "#",
     },
   ];
