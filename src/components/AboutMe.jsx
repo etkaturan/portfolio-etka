@@ -61,11 +61,12 @@ function AboutMe() {
               />
             </span>
             <br />
-            I'm passionate about creating seamless, high-performance web applications.
-            I thrive in developing cutting-edge AI-powered solutions, crafting intuitive
-            UIs, and collaborating on innovative projects. I aim to build tech that
-            not only functions flawlessly but also captivates users with exceptional
-            design and smooth interactivity.
+            I'm a motivated computer science student with a strong foundation
+             in full-stack web development, AI-based backend systems, and practical
+              experience in real-world projects. Proficient in Python, Flask, React, and Docker, 
+              with a proven ability to integrate innovative solutions into functional applications. 
+              Passionate about creating impactful software and continuously learning to drive meaningful 
+              contributions to society.
           </p>
 
           {/* Resume Button with White Glow */}
