@@ -25,7 +25,7 @@ function Projects() {
       description:
         "Developed a full-stack e-commerce website with dynamic product catalogs for a customer.",
       tech: "Flask, React, SQLite",
-      image: "dist/images/projectbarista.png",
+      image: "/portfolio-etka/images/projectbarista.png",
       github: "#",
       live: "http://54.235.2.68/",
     },
@@ -34,8 +34,26 @@ function Projects() {
       description:
         "Designed and developed my personal portfolio showcasing projects and skills.",
       tech: "React, Tailwind CSS",
-      image: "public/images/projectportfolio.png",
+      image: "/portfolio-etka/images/projectportfolio.png",
       github: "dist/images/projectportfolio.png",
+      live: "#",
+    },
+    {
+      title: "E-commerce Website (Fakir.kz)",
+      description:
+        "An under-development e-commerce website similar to Barista Club, designed for Fakir.kz. This project will be visible soon.",
+      tech: "Flask, React, SQLite",
+      image: "public/images/fakir.png",
+      github: "#",
+      live: "#",
+    },
+    {
+      title: "AI-Supported Spatial Hypertext Web App",
+      description:
+        "A private repository for a spatial hypertext web app enhanced with AI features. This project will soon be available for live viewing.",
+      tech: "Flask, React, MongoDB, Neo4j",
+      image: "public/images/hypertext.png",
+      github: "#",
       live: "#",
     },
   ];

@@ -27,7 +27,7 @@ function AboutMe() {
           }}
         >
           <img
-            src="dist/images/imageEtka.jpeg"
+            src="/portfolio-etka/images/imageEtka.jpeg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
@@ -71,7 +71,7 @@ function AboutMe() {
           {/* Resume Button with White Glow */}
           <div className="mt-10">
             <a
-              href="dist/Mekhmetetka_Turan.pdf"
+              href="/portfolio-etka/Mekhmetetka_Turan.pdf"
               download
               className="relative px-8 py-3 text-lg font-semibold uppercase rounded-full"
               onMouseEnter={() => setButtonHover(true)}
